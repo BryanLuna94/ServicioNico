@@ -1,0 +1,39 @@
+{
+    "name": "servicioNico",
+    "version": "1.0.0",
+    "description": "API Rest Nico",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app.js",
+        "test": "mocha \"test/**/*.test.js\"",
+        "prestart": "npm run test"
+    },
+    "author": "#BryanLuna",
+    "license": "ISC",
+    "dependencies": {
+        "amazon-cognito-identity-js": "^3.0.10",
+        "axios": "^0.18.0",
+        "body-parser": "^1.18.3",
+        "chai": "^4.2.0",
+        "express": "^4.16.3",
+        "jsonwebtoken": "^8.5.1",
+        "jwt-simple": "^0.5.6",
+        "mocha": "^6.1.4",
+        "mongodb": "^3.1.8",
+        "morgan": "^1.9.0",
+        "mssql": "^5.1.0",
+        "newrelic": "^4.8.1",
+        "node-fetch": "^2.3.0",
+        "rxjs": "^6.5.3",
+        "swagger-jsdoc": "^3.2.6",
+        "swagger-ui-express": "^4.0.2",
+        "sync-request": "^6.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^5.9.0",
+        "eslint-config-prettier": "^3.3.0",
+        "eslint-plugin-prettier": "^3.0.0",
+        "nodemon": "^1.18.3",
+        "prettier": "^1.15.2"
+    }
+}
