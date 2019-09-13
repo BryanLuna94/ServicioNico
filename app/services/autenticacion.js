@@ -2,12 +2,8 @@ const { constantes } = require('../common/constantes');
 const dbInstanceManager = require('../dbObjectManager');
 const config = require('../../config');
 
-function singIn(req, res){
-    
-    
-}
 
-const Login = async(loginRequest)=> {
+const createToken = async(loginRequest)=> {
     let resultado = '';
     const db = dbInstanceManager.getDb('PE');
 
