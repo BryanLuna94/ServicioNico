@@ -5,7 +5,7 @@ const Usuario = require('../models/Usuario')
 const service = require('../services/autenticacion')
 
 function sigIn(res, req){
-    User.find({ 
+    Usuario.find({ 
         Codigo: req.body.Codigo,
         Clave: req.body.Clave
     }, (err, user) =>{
@@ -15,7 +15,7 @@ function sigIn(res, req){
         req.Usuario = user
         res.status(200).send({
             message: 'Te has logeado correctamente',
-            token: service.cre
+            token: service.crearToken(user)
         })
     })
 }

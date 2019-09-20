@@ -23,6 +23,7 @@ const config = {
         },
     },
     constantes: {
+        claveToken: 'Nick09;',
         paises: ['BO', 'CL', 'CO', 'CR', 'DO', 'EC', 'GT', 'MX', 'PA', 'PE', 'PR', 'SV'],
         CategoriasPum: ['Accesorios', 'Moda', 'Bijouterie', 'Apoyo'],
         marcas: {
